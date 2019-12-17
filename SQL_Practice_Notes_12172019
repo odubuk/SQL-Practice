@@ -1,0 +1,36 @@
+**Practicing use of OR, ORDER BY, LIMIT, and CASE via Codecademy**
+
+/*Or */
+SELECT *
+FROM movies
+WHERE year > 2014
+   OR genre = 'action';
+
+/*Order By */
+SELECT name, year, imdb_rating
+FROM movies
+ORDER BY imdb_rating DESC;
+
+/*Limit */
+SELECT *
+FROM movies
+ORDER BY imdb_rating DESC
+LIMIT 3;
+
+
+/*Case */
+SELECT name,
+  CASE
+    WHEN imdb_rating = 'romance' THEN 'Chill'
+    WHEN genre = 'comedy' THEN 'Chill'
+    ELSE 'Intense'
+  END AS 'Mood'
+FROM movies;
+
+SELECT name,
+  CASE
+    WHEN imdb_rating > 8 THEN 'Fire'
+    WHEN imdb_rating > 6 THEN 'Pretty Good'
+    ELSE 'Trash'
+  END AS 'Quality'
+FROM movies;
