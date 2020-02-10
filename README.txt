@@ -1,0 +1,1 @@
+This is a collection of SQL Exercises & Projects I am currently working on/teaching myself!
