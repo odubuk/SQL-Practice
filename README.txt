@@ -1,1 +1,1 @@
-This is a collection of SQL Exercises & Projects I am currently working on/teaching myself!
+This is a collection of SQL Exercises & Projects I have worked on via book learning/self teaching.
